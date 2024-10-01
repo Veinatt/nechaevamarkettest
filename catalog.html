@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="img/favicon.png" type="image/png" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.18/fullpage.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/5.4.4/photoswipe.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/5.4.4/umd/photoswipe.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/5.4.4/umd/photoswipe-lightbox.umd.min.js"></script>
+    <link rel="stylesheet" href="css/style.min.css" />
+    <title>Nechaeva</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="left-menu">
+                <a href="main.html" class="logo-text logo-header-desktop">
+                    Nechaeva
+                </a>
+                <a href="main.html" class="logo-text logo-header-mobile">
+                    N
+                </a>
+                <div class="burger-wrapper">
+                    <div class="burger">
+                        <span class="sp"></span>
+                    </div>
+                </div>
+                <div class="mobile-header">
+                    <div class="menu-links">
+                        <a href="catalog.html">Каталог</a>
+                        <a href="main.html#main-page_contacts">Контакты</a>
+                        <a href="about.html">О нас</a>
+                    </div>
+                    <a href="tel:+79999999999" class="header-tel"  data-bs-toggle="modal" data-bs-target="#TimeoutForm">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M17.5 13.6833V16.63C17.5001 16.841 17.4202 17.0441 17.2763 17.1985C17.1325 17.3528 16.9355 17.4469 16.725 17.4617C16.3611 17.4872 16.0639 17.5 15.8333 17.5C8.46917 17.5 2.5 11.5308 2.5 4.16667C2.5 3.93667 2.51278 3.63944 2.53833 3.275C2.5531 3.06454 2.64715 2.86751 2.8015 2.72367C2.95585 2.57984 3.15902 2.4999 3.37 2.5H6.31667C6.42003 2.4999 6.51975 2.53822 6.59644 2.60752C6.67313 2.67682 6.72133 2.77215 6.73167 2.875C6.75056 3.06611 6.76833 3.21944 6.785 3.335C6.9506 4.49077 7.28999 5.61487 7.79167 6.66917C7.87083 6.83583 7.81917 7.035 7.66917 7.14167L5.87083 8.42667C6.97059 10.9886 9.01227 13.0302 11.5742 14.13L12.8575 12.335C12.9097 12.2614 12.9863 12.2086 13.0736 12.1859C13.161 12.1632 13.2535 12.172 13.335 12.2108C14.3892 12.7116 15.513 13.0501 16.6683 13.215C16.7839 13.2317 16.9367 13.2494 17.1267 13.2683C17.2294 13.2789 17.3245 13.3271 17.3936 13.4038C17.4628 13.4805 17.5001 13.5801 17.5 13.6833Z"
+                                fill="#413E37" />
+                        </svg>
+                        +7 (999) 999-99-99
+                    </a>
+                </div>
+            </div>
+            <div class="right-menu">
+                <a href="cart.html" class="cart">0</a>
+                <button type="button" class="log-in" data-bs-toggle="modal" data-bs-target="#LoginForm"></button>
+            </div>
+        </div>
+    </header>
+    <div class="modal fade default-modal" id="LoginForm" tabindex="-1" aria-labelledby="LoginLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="container">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <h2>Вход</h2>
+                    <div class="switchmodal">
+                        Нет аккаунта?
+                        <button type="button" data-bs-toggle="modal" data-bs-target="#RegForm">Регистрация</button>
+                    </div>
+                    <form action="">
+                        <div class="default-form-field">
+                            <label for="LoginMail">E-mail</label>
+                            <input type="email" placeholder="example@gmail.com" id="LoginMail">
+                        </div>
+                        <div class="default-form-field">
+                            <label for="LoginPass">Пароль</label>
+                            <input type="password" placeholder="Введите пароль" id="LoginPass">
+                        </div>
+                        <a href="user.html" class="main-btn">Войти</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade default-modal" id="RegForm" tabindex="-1" aria-labelledby="RegLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="container">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <h2>Регистрация</h2>
+                    <div class="switchmodal">
+                        Есть аккаунт?
+                        <button type="button" data-bs-toggle="modal" data-bs-target="#LoginForm">Войти</button>
+                    </div>
+                    <form action="">
+                        <div class="default-form-field">
+                            <label for="RegMail">E-mail</label>
+                            <input type="email" placeholder="example@gmail.com" id=RegMail">
+                        </div>
+                        <div class="default-form-field">
+                            <label for=RegPass">Пароль</label>
+                            <input type="password" placeholder="Введите пароль" id=RegPass">
+                        </div>
+                        <div class="default-form-field">
+                            <label for=RegPassAgain">Повторите пароль</label>
+                            <input type="password" placeholder="Повторите пароль" id="RegPassAgain">
+                        </div>
+                        <button type="button" class="main-btn">Зарегистрироваться</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade default-modal" id="CheckForm" tabindex="-1" aria-labelledby="CheckLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="container">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <h2>Введите
+                        проверочный код</h2>
+                    <div class="switchmodal">
+                        Мы отправили его на ваш e-mail <div id="userEmail">nechae *** **yandex.ru</div>
+                        <button type="button" data-bs-toggle="modal" data-bs-target="#LoginForm">Изменить</button>
+                    </div>
+                    <form action="">
+                        <div class="form__group form__pincode">
+                            <input type="tel" name="pincode-1" maxlength="1" pattern="[\d]*" tabindex="1"
+                                placeholder="·" autocomplete="off">
+                            <input type="tel" name="pincode-2" maxlength="1" pattern="[\d]*" tabindex="2"
+                                placeholder="·" autocomplete="off">
+                            <input type="tel" name="pincode-3" maxlength="1" pattern="[\d]*" tabindex="3"
+                                placeholder="·" autocomplete="off">
+                            <input type="tel" name="pincode-4" maxlength="1" pattern="[\d]*" tabindex="4"
+                                placeholder="·" autocomplete="off">
+                        </div>
+                        <button type="submit" class="main-btn" id="submit-code">Готово</button>
+                        <button class="timeout-code-btn" id="timer-btn" type="button">Повторно запросить код
+                            <div id="timer-time"></div></button>
+                        <button class="timeout-code-btn" id="timer-success-btn" type="button">Повторно запросить
+                            код</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade default-modal" id="TimeoutForm" tabindex="-1" aria-labelledby="TimeoutLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="container">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <h2>Узнать какие камни <br> подходят именно <br>
+                        под Ваш знак зодиака</h2>
+                    <form action="">
+                        <div class="default-form-field">
+                            <label for="TimeoutNumber">Номер телефона или Telegram</label>
+                            <input type="text" placeholder="+7(999) 999-99-99 или @login" id=TimeoutNumber">
+                        </div>
+                        <div class="default-form-field">
+                            <label for=TimeoutDate">Дата рождения</label>
+                            <input type="date" placeholder="11.11.2000" id=TimeoutDate">
+                        </div>
+                        <button type="submit" class="main-btn">Узнать</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main>
+
+        <div class="container">
+            <div id="breadcrumbs">
+                <a href="#" class="bc-link">Главная</a>
+                <a href="#" class="bc-link bc-active">Каталог</a>
+            </div>
+            <section id="catalog-page">
+                <h2>Каталог</h2>
+                <div class="catalog-cont">
+                    <button class="filters-mobile-cont main-btn outline-btn">Фильтры</button>
+                    <div class="filters-cont">
+                        <div class="mobile-title">
+                            <h2>Фильтры</h2>
+                            <button type="button" class="filters-close"></button>
+                        </div>
+                        <div class="filter-block custom-price">
+                            <button class="accordion">Цена</button>
+                            <div class="panel">
+                                <div class="price-input">
+                                    <div class="field">
+                                        <input type="number" class="input-min" value="2500">
+                                    </div>
+                                    <div class="field">
+                                        <input type="number" class="input-max" value="7500">
+                                    </div>
+                                </div>
+                                <div class="slider">
+                                    <div class="progress"></div>
+                                </div>
+                                <div class="range-input">
+                                    <input type="range" class="range-min" min="0" max="10000" value="2500" step="50">
+                                    <input type="range" class="range-max" min="0" max="10000" value="7500" step="50">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filter-block">
+                            <button class="accordion">Категория</button>
+                            <div class="panel">
+                                <label class="custom-checkbox">Браслеты
+                                    <input type="checkbox" checked="checked" name="category">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="custom-checkbox">Кулоны
+                                    <input type="checkbox" name="category">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="custom-checkbox">Серьги
+                                    <input type="checkbox" name="category">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="filter-block">
+                            <button class="accordion">Категория</button>
+                            <div class="panel">
+                                <label class="custom-checkbox">Браслеты
+                                    <input type="checkbox" checked="checked" name="category">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="custom-checkbox">Кулоны
+                                    <input type="checkbox" name="category">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="custom-checkbox">Серьги
+                                    <input type="checkbox" name="category">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="filter-block">
+                            <button class="accordion">Категория</button>
+                            <div class="panel">
+                                <label class="custom-checkbox">Браслеты
+                                    <input type="checkbox" checked="checked" name="category">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="custom-checkbox">Кулоны
+                                    <input type="checkbox" name="category">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="custom-checkbox">Серьги
+                                    <input type="checkbox" name="category">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="filter-block">
+                            <button class="accordion">Категория</button>
+                            <div class="panel">
+                                <label class="custom-checkbox">Браслеты
+                                    <input type="checkbox" checked="checked" name="category">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="custom-checkbox">Кулоны
+                                    <input type="checkbox" name="category">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="custom-checkbox">Серьги
+                                    <input type="checkbox" name="category">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="btns-sticky-cont">
+                            <button class="main-btn">Искать</button>
+                            <button class="main-btn outline-btn">Сбросить</button>
+                        </div>
+                    </div>
+                    <div class="cards-cont">
+                        <div class="sort-block">
+                            <div>Сортировать по:</div>
+                            <select class="select" name="language">
+                                <option value="increase">возрастанию</option>
+                                <option value="decrease">убыванию</option>
+                            </select>
+                        </div>
+                        <div class="cards-block">
+                            <a href="product.html" class="product-card">
+                                <div class="product-card-container">
+                                    <img class="product-img" src="img/card.png" alt="">
+                                    <div class="price-list">
+                                        <div class="product-price">3 899 Р</div>
+                                        <div class="product-old-price">5 899 Р</div>
+                                        <div class="product-discount">-20%</div>
+                                    </div>
+                                    <div class="name-shop">
+                                        <div class="product-name">Браслет “Cила волка” <br> Черный авантюрин</div>
+                                        <button class="product-shop"></button>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="product.html" class="product-card">
+                                <div class="product-card-container">
+                                    <img class="product-img" src="img/card.png" alt="">
+                                    <div class="price-list">
+                                        <div class="product-price">3 899 Р</div>
+                                        <div class="product-old-price">5 899 Р</div>
+                                        <div class="product-discount">-20%</div>
+                                    </div>
+                                    <div class="name-shop">
+                                        <div class="product-name">Браслет “Cила волка” <br> Черный авантюрин</div>
+                                        <button class="product-shop"></button>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="product.html" class="product-card">
+                                <div class="product-card-container">
+                                    <img class="product-img" src="img/card.png" alt="">
+                                    <div class="price-list">
+                                        <div class="product-price">3 899 Р</div>
+                                        <div class="product-old-price">5 899 Р</div>
+                                        <div class="product-discount">-20%</div>
+                                    </div>
+                                    <div class="name-shop">
+                                        <div class="product-name">Браслет “Cила волка” <br> Черный авантюрин</div>
+                                        <button class="product-shop"></button>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="product.html" class="product-card">
+                                <div class="product-card-container">
+                                    <img class="product-img" src="img/card.png" alt="">
+                                    <div class="price-list">
+                                        <div class="product-price">3 899 Р</div>
+                                        <div class="product-old-price">5 899 Р</div>
+                                        <div class="product-discount">-20%</div>
+                                    </div>
+                                    <div class="name-shop">
+                                        <div class="product-name">Браслет “Cила волка” <br> Черный авантюрин</div>
+                                        <button class="product-shop"></button>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="product.html" class="product-card">
+                                <div class="product-card-container">
+                                    <img class="product-img" src="img/card.png" alt="">
+                                    <div class="price-list">
+                                        <div class="product-price">3 899 Р</div>
+                                        <div class="product-old-price">5 899 Р</div>
+                                        <div class="product-discount">-20%</div>
+                                    </div>
+                                    <div class="name-shop">
+                                        <div class="product-name">Браслет “Cила волка” <br> Черный авантюрин</div>
+                                        <button class="product-shop"></button>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="product.html" class="product-card">
+                                <div class="product-card-container">
+                                    <img class="product-img" src="img/card.png" alt="">
+                                    <div class="price-list">
+                                        <div class="product-price">3 899 Р</div>
+                                        <div class="product-old-price">5 899 Р</div>
+                                        <div class="product-discount">-20%</div>
+                                    </div>
+                                    <div class="name-shop">
+                                        <div class="product-name">Браслет “Cила волка” <br> Черный авантюрин</div>
+                                        <button class="product-shop"></button>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="product.html" class="product-card">
+                                <div class="product-card-container">
+                                    <img class="product-img" src="img/card.png" alt="">
+                                    <div class="price-list">
+                                        <div class="product-price">3 899 Р</div>
+                                        <div class="product-old-price">5 899 Р</div>
+                                        <div class="product-discount">-20%</div>
+                                    </div>
+                                    <div class="name-shop">
+                                        <div class="product-name">Браслет “Cила волка” <br> Черный авантюрин</div>
+                                        <button class="product-shop"></button>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <button class="more-block main-btn outline-btn">
+                            Показать ещё
+                        </button>
+                        <div class="pagination-block">
+                            <button class="main-btn outline-btn active">1</button>
+                            <button class="main-btn outline-btn">2</button>
+                            <button class="main-btn outline-btn">3</button>
+                            <button class="main-btn outline-btn">4</button>
+                            <button class="main-btn outline-btn">5</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="left-cont">
+                <a href="#" class="logo-text">Nechaeva</a>
+                <div class="logo-desc">Магазин ручных изделий <br>
+                    из природных материалов</div>
+            </div>
+            <div class="right-cont">
+                <div class="right-cont-col">
+                    <div class="right-cont-col-title">Покупателям</div>
+                    <a href="#" class="right-cont-col-link">О нас</a>
+                    <a href="#" class="right-cont-col-link">Контакты</a>
+                    <a href="#" class="right-cont-col-link">Каталог</a>
+                    <a href="#" class="right-cont-col-link">Доставка</a>
+                </div>
+                <div class="right-cont-col">
+                    <div class="right-cont-col-title">Помощь и поддержка</div>
+                    <a href="#" class="right-cont-col-link">Контакты</a>
+                    <a href="#" class="right-cont-col-link">Перейти в Telegram</a>
+                    <a href="#" class="right-cont-col-link">Перейти в WhatsApp</a>
+                </div>
+                <div class="right-cont-col">
+                    <div class="right-cont-col-title">Информация</div>
+                    <a href="#" class="right-cont-col-link">Оферта</a>
+                    <a href="#" class="right-cont-col-link">Политика конфиденциальности</a>
+                    <a href="#" class="right-cont-col-link">Создатели сайта</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" type="module"></script>
+    <script>
+        var lightbox = new PhotoSwipeLightbox({
+            gallery: '#pp_gallery',
+            children: 'a',
+            // dynamic import is not supported in UMD version
+            pswpModule: PhotoSwipe
+        });
+        lightbox.init();
+    </script>
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"
+integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg=="
+crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.min.js"
+integrity="sha512-5/OHwmQzDSBS0Ous4/hlYoWLHd06/d2r7LdKZQVBXOA6PvOqWVXtdboiLTU7lQTGyVoKVTNkwi0ol4gHGlw5ww=="
+crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js" crossorigin="anonymous"
+referrerpolicy="no-referrer"></script> -->
+    <script src="js/app.min.js"></script>
+    <script src="files/form.js"></script>
+</body>
+</html>
